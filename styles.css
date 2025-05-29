@@ -260,7 +260,7 @@ h2 {
   gap: 1.5rem;
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .contacto-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -286,11 +286,8 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-.form-group {
-  margin-bottom: 1rem;
-}
-
-.form-group label {
+/* Etiquetas como bloques y espaciado entre campos */
+.contacto-form form>label {
   display: block;
   font-size: 1rem;
   font-weight: 500;
@@ -298,16 +295,19 @@ h2 {
   color: #4b5563;
 }
 
-.form-group input,
-.form-group textarea {
+/* Inputs y textarea hijos directos del form */
+.contacto-form form>input,
+.contacto-form form>textarea {
   width: 100%;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: transparent;
+  margin-bottom: 1rem;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+/* Estado focus igual que antes */
+.contacto-form form>input:focus,
+.contacto-form form>textarea:focus {
   border: transparent;
   outline: none;
   border-color: yellowgreen;
@@ -316,7 +316,7 @@ h2 {
 
 .btn-submit {
   width: 100%;
-  background-color: rgb(247, 215, 147);
+  background-color: yellowgreen;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -325,7 +325,7 @@ h2 {
 }
 
 .btn-submit:hover {
-  background-color: rgb(247, 234, 147);
+  background-color: rgb(136, 182, 44);
 }
 
 .info-icon {
@@ -339,7 +339,7 @@ h2 {
 }
 
 .info-icon i {
-  color: rgb(244, 183, 68);
+  color: yellowgreen;
 }
 
 .info-item h4 {
@@ -356,7 +356,7 @@ h2 {
   border-radius: 0.37rem;
   overflow: hidden;
   border: 1px solid white;
-  position: relative
+  position: relative;
 }
 
 .map iframe {
